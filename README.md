@@ -21,7 +21,7 @@ need an Atlassian MCP server configured in the target project to work fully.
 
 ## Install
 
-Via [`agent-porter`](https://github.com/kaushik912/agent-porter):
+Via [`agent-porter`](https://github.com/kaushik912/claude-code-tooling/tree/master/agent-porter):
 
 ```bash
 agent-porter install --repo kaushik912/my-claude-agents --agent doc-writer
