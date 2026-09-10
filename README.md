@@ -12,11 +12,13 @@ as-is (symlink or submodule it into a project) even without any tooling.
 | [`debugger`](.claude/agents/debugger.md) | Investigates bugs, exceptions, and unexpected behavior — reproduces, isolates root cause, proposes fix. |
 | [`jira-triage`](.claude/agents/jira-triage.md) | Pulls a Jira story/bug, summarizes scope, identifies affected code areas. |
 | [`code-reviewer`](.claude/agents/code-reviewer.md) | Reviews diffs for bugs, security, style before merge. |
-| [`feature-implementer`](.claude/agents/feature-implementer.md) | Implements a feature from Jira acceptance criteria into working code. |
+| [`jira-feature-implementer`](.claude/agents/jira-feature-implementer.md) | Implements a feature from Jira acceptance criteria into working code. |
 | [`test-runner`](.claude/agents/test-runner.md) | Runs Maven/Gradle test suite and fixes failures. |
 | [`doc-writer`](.claude/agents/doc-writer.md) | Documents repo architecture, main modules, and key functionality into README/docs. |
+| [`memory-doc-writer`](.claude/agents/memory-doc-writer.md) | Same as `doc-writer`, but uses the codebase-memory-mcp graph (search_graph/trace_path/get_code_snippet) instead of raw grepping. |
+| [`scenario-griller`](.claude/agents/scenario-griller.md) | Brainstorms API test scenarios for a repo interactively and implements a confirmed one as a Bruno or RestAssured test. |
 
-Note: `jira-triage` and `feature-implementer` use `mcp__Atlassian__*` tools — they
+Note: `jira-triage` and `jira-feature-implementer` use `mcp__Atlassian__*` tools — they
 need an Atlassian MCP server configured in the target project to work fully.
 
 ## Install
